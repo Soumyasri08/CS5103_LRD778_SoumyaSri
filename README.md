@@ -10,7 +10,7 @@ step - 3
 In the Package Explorer (left-hand side of the window) select the project which you have created.
 
 step - 4
-Right-click on the src folder, select New > Class from the submenu. Provide the Class name as Count_words and click on Finish button.
+Right-click on the src folder, select New > Class from the submenu. Provide the Class name as Count_Words and click on Finish button.
 
 step - 5
 Write the program and save it.
