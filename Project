@@ -1,50 +1,58 @@
-import java.util.Map;
-import java.util.TreeMap;
+package codes;
+import java.util.*;
+
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Scanner;
-public class Frequency_Of_Words {
+
+public class Count_Words
+{
+
+    public static void main(String[] args) throws IOException
+    {       
     
-    // Function to count frequency of
-    // words in the given string
-    static void count(String str)
-    {
-        Map<String,Integer> mp=new TreeMap<>();
- 
-        // Splitting to find the word
-        String arr[]=str.split(" ");
- 
-        // Loop to iterate over the words
-        for(int i=0;i<arr.length;i++)
+    	
+    	 Scanner sc = new Scanner(System.in);
+         System.out.print("name of the text file : ");
+         String fileName = sc.nextLine();
+         FileInputStream f = new FileInputStream(fileName);
+       Scanner input = new Scanner(new File(fileName));
+       int CharCount=f.available();
+        char ch;
+        int LineCount=0;
+       
+        for(int i=0;i<CharCount;i++)
         {
-            // Condition to check if the 
-            // array element is present in
-            // the hash-map
-            if(mp.containsKey(arr[i]))
-                {
-                mp.put(arr[i], mp.get(arr[i])+1);
-            }
-            else
-            {
-                mp.put(arr[i],1);
+                    ch=(char)f.read();
+                    if(ch=='\n')
+                    LineCount++;
+                                                       
+        }
+        System.out.println("\nNumber of lines : "+LineCount);
+        System.out.println("\nNumber of characters : "+CharCount);
+        Map<String, Integer> wordCounts = new TreeMap<String, Integer>();
+        while (input.hasNext()) {
+        	String next = input.next().toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
+            if (!wordCounts.containsKey(next)) {
+                wordCounts.put(next, 1);
+            } else {
+                wordCounts.put(next, wordCounts.get(next) + 1);
             }
         }
-        
-        // Loop to iterate over the 
-        // elements of the map
-        for(Map.Entry<String,Integer> entry: 
-                    mp.entrySet())
-        {
-            System.out.println(entry.getKey()+
-                    " - "+entry.getValue());
+       
+        int min = 0;
+        for (String word : wordCounts.keySet()) {
+            int count = wordCounts.get(word);
+            if (count >= min) {
+                System.out.println(word + "\t" + count);
+            }
+        }
+       f.close();
+     sc.close();
+     input.close();
         }
     }
- 
-    //Main method
-    public static void main(String[] args) {
-        Scanner s = new Scanner(System.in); 
-        String str = s.nextLine();
- 
-        // Function Call
-        count(str);
-       }
-   }
 
+    
