@@ -1,1 +1,39 @@
+TEXTUAL DESCRIPTION
+==========================
+
+A text is a sequence of characters. 
+
+A word is a sequence of non-blank characters
+
+A line is a sequence of words
+
+In this project we find the count the number of lines , characters in a TEXT file
+
+We also count the number of occurrences of a word.
+
+
+CONCEPT DESCRIPTION
+========================
+
+char == [CHAR] (CHAR is defined as all characters)
+blank == [space,tab]
+TEXT == seq char (seq is a predefined function, meaning a sequence of elements from its set-type argument) 
+SEPARATOR == seq1 blank (seq1 is a predefined function, meaning non-empty sequences)
+WORD == seq1 (char \ blank)
+LINE == seq1(WORD)
+
+
+
+REQUIREMENT OF FUNCTION LINE COUNT
+=================================
+LineCount : line -> seq TEXT
+
+REQUIREMENT OF FUNCTION CHARACTER COUNT
+========================================
+CharCount: WORD -> seq char            
+
+REQUIREMENT OF FUNCTION WORD COUNT
+======================================
+words: TEXT -> seq WORD 
+	 	 
 
