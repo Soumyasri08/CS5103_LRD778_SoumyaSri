@@ -13,7 +13,7 @@ public class Count_Words
 	public static void main(String[] args) throws IOException
     {       
          
-		// We use the BufferedReader because it always checks whether the requested data already exist.
+		// We used BufferedReader because it always checks whether the requested data already exists in file or not.
         
     	 BufferedReader reader ;
     	 
