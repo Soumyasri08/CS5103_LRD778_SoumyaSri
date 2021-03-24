@@ -28,4 +28,4 @@ step - 9
 After compilation, Enter the name of the text file in console if there are no errors.
 
 step - 10
-It takes the input, runs the code successfully and finally prints the output.
+It takes the input, runs the code successfully and finally prints the required output.
