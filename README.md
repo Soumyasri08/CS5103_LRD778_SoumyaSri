@@ -24,8 +24,8 @@ Write the program and save it
 step - 8
 click on the run button
 
-step - 7
+step - 9
 After compilation, Enter the name of the text file in console if there are no errors.
 
-step - 8
+step - 10
 It takes the input, runs the code successfully and finally prints the output.
