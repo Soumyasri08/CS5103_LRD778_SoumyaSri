@@ -24,16 +24,28 @@ LINE == seq1(WORD)
 
 
 
-REQUIREMENT OF FUNCTION LINE COUNT
+REQUIREMENT OF FUNCTION Line_Count
 =================================
-LineCount : line -> seq TEXT
+Line_Count : LINE -> seq TEXT
 
-REQUIREMENT OF FUNCTION CHARACTER COUNT
+
+REQUIREMENT OF FUNCTION Char_Count
 ========================================
-CharCount: WORD -> seq char            
+Char_Count: WORD -> seq char            
 
-REQUIREMENT OF FUNCTION WORD COUNT
+
+REQUIREMENT OF FUNCTION WORDS
 ======================================
 words: TEXT -> seq WORD 
+
+
+REQUIREMENT OF FUNCTION WORD_COUNT
+==================================
+WORD_COUNT: TEXT -> N 	 
+ 
+\forall file: TEXT
+ 
+WORD_COUNT file = # (words file)
+
 	 	 
 
