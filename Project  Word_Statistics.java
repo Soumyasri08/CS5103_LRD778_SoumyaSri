@@ -38,8 +38,8 @@ public class Count_Words {
 
 					characterCount += word.length();
                     
-					//I am assuming all the characters are in lower case. 
-					
+					//I am assuming all the characters should be converted to lower case. 
+					//So that we can increment the count frequency of same word even if it is in upper case
 					word = word.toLowerCase().replaceAll("[^a-zA-Z0-9]", "");
 
 					// If the word occurs for the first time then we consider the count as 1
