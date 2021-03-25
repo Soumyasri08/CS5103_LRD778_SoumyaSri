@@ -13,13 +13,15 @@ step - 4
 Right-click on the src folder, select New > Untitled Text File from the submenu.Provide name for the text file and click on Finish.
 
 step - 5
-write some text in the file and save it.
+write some text in the file and save it. 
+
 
 step - 6
 Right-click on the src folder, select New > Class from the submenu. Provide the Class name as Count_Words and click on Finish button.
 
 step - 7
-Write the program and save it (In this project I assumed all the characters are in lower case)
+Write the program and save it.
+
 
 step - 8
 click on the run button
