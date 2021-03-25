@@ -19,7 +19,7 @@ step - 6
 Right-click on the src folder, select New > Class from the submenu. Provide the Class name as Count_Words and click on Finish button.
 
 step - 7
-Write the program and save it
+Write the program and save it (In this project I assumed all the characters are in lower case)
 
 step - 8
 click on the run button
