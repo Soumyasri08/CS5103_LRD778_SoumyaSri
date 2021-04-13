@@ -29,17 +29,17 @@ LINE == seq1(WORD)
 
 REQUIREMENT OF FUNCTION Line_Count
 =================================
-Line_Count : LINE -> seq TEXT
+Line_Count : TEXT -> N
 
+\forall file : TEXT
+Line_count = # (Lines file)
 
 REQUIREMENT OF FUNCTION Char_Count
 ========================================
-Char_Count: WORD -> seq char            
+Char_Count: TEXT -> N   
 
-
-REQUIREMENT OF FUNCTION WORDS
-======================================
-words: TEXT -> seq WORD 
+\forall file : TEXT
+Char_Count = # (Characters file)
 
 
 REQUIREMENT OF FUNCTION WORD_COUNT
