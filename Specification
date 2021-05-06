@@ -74,7 +74,7 @@ Replaceby : W:WORD
 file : TEXT
 \forall w:WORD
 w<> = 0&
-w<e> = ReplacedBy if Word==ToBeReplaced
+w<s> = ReplacedBy if Word==ToBeReplaced
      = Word      if  Word != ToBeReplaced
      
-w<s> = Word(head s) + Word(tail s)
+w<lsr> = Word(head s) U Word(tail s)
