@@ -64,7 +64,7 @@ Count w<> = 0&
 Count w<e> = 0 if w!=e
            = 1 if w==e
 Count w<s> = Count w(head s) + Count w(tail s)
- 
 
-	 	 
+
+
 
