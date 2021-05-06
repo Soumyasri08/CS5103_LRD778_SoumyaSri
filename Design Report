@@ -1,0 +1,17 @@
+Design Problem
+====================
+In this project we need to write a program to perform statistics of words in 
+given document (as a string). 
+The initial requirement is to count the frequency of each unique word.
+The second requirement is to count the number of lines and characters present in the document.
+The final requirement is to allow replacement of all occurrences of a given pattern word to a given replacement word.
+
+
+Design Changes
+======================
+Initially I have taken a file which consists of text.
+In the first step of requirement we counted the frequency of every unique words in the file.
+In the next step we added line count and character count to the code which calculates the total number of lines and charcters
+from the text file.
+As per the third requirement we will replace a pattern word with a given replacement word and  the 
+replacement happens only when the given pattern word matches with a whole word.
