@@ -13,5 +13,10 @@ Initially I have taken a file which consists of text.
 In the first step of requirement we counted the frequency of every unique words in the file.
 In the next step we added line count and character count to the code which calculates the total number of lines and charcters
 from the text file.
+So in the output we will get the count of total number of lines ,characters in a file along with the unique word and its count.
 As per the third requirement we will replace a pattern word with a given replacement word and  the 
 replacement happens only when the given pattern word matches with a whole word.
+So in the code I appended the word which is to be replaced by the replacing word if its pattern matches or else
+there will be no replacement
+Finally we can see an output which consists of the contents of text file and the line ,character,word counts and also the
+contents of the file after replacement.
